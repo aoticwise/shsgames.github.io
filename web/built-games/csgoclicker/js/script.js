@@ -25,7 +25,7 @@ var jackpotInventory = {};
 var inventoryMax = 50;
 var inventoryCurrent = 0;
 
-var keyPrice = 2.50;
+var keyPrice = 0.00;
 
 var caseDiscount = 0;
 var keyDiscount = 0;
@@ -37,6 +37,7 @@ var operationCases = {
   case4: {name: "Operation Vanguard Case", price: 0.16, img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFIuh6rJImVGvtjllYaNka6la7rUxWkE65BzibvD9N7z0Q22-0Fka2GlJ5jVLFHqavWW2g"},
   case5: {name: "Chroma Case", price: 0.07, img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFEuh_KQJTtEuI63xIXbxqOtauyClTMEsJV1jruS89T3iQKx_BBqa2j3JpjVLFH1xpp0EQ"},
   case6: {name: "Falchion Case", price: 0.03, img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FF8ugPDMIWpAuIq1w4KIlaChZOyFwzgJuZNy3-2T89T0jlC2rhZla2vwIJjVLFHz75yKpg"}
+  case7: {name: "Zoraxis Industries", price: 1000.00, img: "https://static.wikia.nocookie.net/ieytd/images/2/26/Zoraxislogo.jpg/revision/latest?cb=20211213131408"}
 }
 
 var knives = {
@@ -451,6 +452,86 @@ var cases = {
         name: "SCAR-20 | Grotto",
         price: 0.11,
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbmkOVUw7PLZTi5B7c7kxL-Hkvb_DLfYkWNF18lwmO7Eu9yjig3m-EJqYGGhdYWRdVM3YAvW_VDrkrjt1pe_upnOzHZksyQq7HzD30vgqBRMdfs"
+      },
+      weap2: {
+        name: "MP9 | Deadly Poison",
+        price: 0.12,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6r8FAR17P7YKAJG6d2ymJm0h_j9ILTfqWdY781lteXA54vwxgTj_EVlZG-mI4acJ1U5M13Q-QXqxrvrgsS075TPy3FgsiYj4C3Yy0SpwUYb0AETg9w"
+      },
+      weap3: {
+        name: "XM1014 | Quicksilver",
+        price: 0.08,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgporrf0e1Y07PLZTiVPvYznwL-YnvD4MoTdn2xZ_Pp9i_vG8MKi2Vfl80M_N2qhLNTBJ1c5NViC-1C3kLzt15_ouZnOwHAwvyFw5i6MgVXp1lnYE3jK"
+      },
+      weap4: {
+        name: "M249 | System Lock",
+        price: 0.09,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-jxcjhjxszFI2kb08-zn5SEhcj4OrzZglRd6dd2j6fCrNmijQPkqEVpZWnxINSXIQY4Yw7Xqwe8we3u1JG678_Kmnpg7CFx-z-DyHq2In7y"
+      },
+      weap5: {
+        name: "Glock-18 | Catacombs",
+        price: 0.10,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf0Ob3djFN79eJkIWKg__gPLfdqWdY781lteXA54vwxleyqBBqMmj0JIWSIwU9MwqC_1O6kr_ujZO6753OmiRkvHR2tHvZlkGpwUYbVEIcxNs"
+      }
+    },
+    restricted: {
+      weap1: {
+        name: "Desert Eagle | Naga",
+        price: 0.32,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PLZTjlH7du6kb-FlvD1DLfYkWNF18lwmO7Eu46h2QS1r0tvZjvyLI-RIwI6aV7X_ADrwevmhZO0up_AwSM1uHNw5nzD30vgQ0tV-jw"
+      },
+      weap2: {
+        name: "Dual Berettas | Urban Shock",
+        price: 0.39,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq5WZlfb6IK_ehGZu5Mx2gv3--Y3nj1H6r0BvMGCncICQdgU6NVCC8we6lOm9gJa1vsuamnA2uidz7XjZyhO1hAYMMLJ4pyETVQ"
+      },
+      weap3: {
+        name: "Sawed-Off | Serenity",
+        price: 0.38,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cih9_92hkYSEkfHLN77Hl1Rc7cF4n-T--Y3nj1H6qks5YmihJoaRcFc4Yl6EqVXrwu_shJW4tJWfzHM3siYltnnUzka_gwYMMLK08M4Gpg"
+      },
+      weap3: {
+        name: "MAC-10 | Malachite",
+        price: 0.39,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0v73fDxBvYyJmYGHlvT8Oq_UqWdY781lteXA54vwxg3srxBuYG_7JoSQJwdtMF2Dr1O5w-nshcDtv5-YwHBk6XYg5niPzUapwUYbFckqtmc"
+      }
+    },
+    classified: {
+      weap1: {
+        name: "AK-47 | Cartel",
+        price: 2.01,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhhwszJemkV09-3hpSOm8j4OrzZglRd6dd2j6eT8Nv3jQ2y_xBrMT2iJ4aRJARvZgvT_VW8x-67jJPt6suamHtg7CBw-z-DyAdS0pUi"
+      },
+      weap2: {
+        name: "M4A4 | 龍王 (Dragon King)",
+        price: 3.21,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW0924l4WYg-X1P4Tck29Y_chOhujT8om7jgex_RVkNWqlcYaSdgVoZljWqFnrkOrpjMK5tZ7MziQ36XYi7H6Lywv3308dOff4vw"
+      },
+      weap3: {
+        name: "P250 | Muertos",
+        price: 1.72,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhjxszYI2gS09G3moSKm_bLP7LWnn9u5MRjjeyPpY32igHl_0VoMD30JoCRcVU4MFmGrwfvl-bohpC-tJWcm3c3uiJ04mGdwUJxLpw2dQ"
+      }
+    },
+    covert: {
+      weap1: {
+        name: "AWP | Man-o'-war",
+        price: 10.32,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAZt7PLfYQJF4NOkjb-HnvD8J4Tdl3lW7Ysi3rHE9ImljgGw_xc9a2_0JY6ddA48Z17U8gXqxe_mgse1tJ_AyXtjpGB8srCcYzyi"
+      },
+      weap2: {
+        name: "Galil AR | Chatterbox",
+        price: 3.69,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbupIgthwczLZAJF7dC_mL-KleX1ILLemFRc7cF4n-T--Y3nj1H6_0Q6YWH0coTBdANoMlGG_gfrlLq9gcC6u8zMyXdh6HIk7XnYl0fliAYMMLLc6Xl8Aw"
+      }
+    }
+  },
+  case7: {
+    milspec: {
+      weap1: {
+        name: "Zoraxis Death Engine",
+        price: 1000000,
+        img: "https://static.wikia.nocookie.net/ieytd/images/2/26/Zoraxislogo.jpg/revision/latest?cb=20211213131408"
       },
       weap2: {
         name: "MP9 | Deadly Poison",
