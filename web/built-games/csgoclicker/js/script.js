@@ -601,39 +601,6 @@ var cases = {
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbupIgthwczLZAJF7dC_mL-KleX1ILLemFRc7cF4n-T--Y3nj1H6_0Q6YWH0coTBdANoMlGG_gfrlLq9gcC6u8zMyXdh6HIk7XnYl0fliAYMMLLc6Xl8Aw"
       }
     }
-  },
-  case6: {
-    milspec: {
-      weap1: {
-        name: "Galil AR | Rocket Pop",
-        price: 0.09,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbupIgthwczLZAJF7dC_mIGZqOf1Ia_YlWdU-_p8j-3I4IHKhFWmrBZyMT-gcIHDdg42Y1mG8wS2kLvo1pXuupvOnSdgsyIg43iLn0Hj1ElJOvsv26IIRmYCig"
-      },
-      weap2: {
-        name: "Glock-18 | Bunsen Burner",
-        price: 0.10,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf0uL3djFN79fnzL-Nm_b5NqjulGdE7fp8j-3I4IHKhFWmrBZyY23zctKQdFU6Zg2EqwC7xe680cO8uZufyCAx63Eg7X_emUfliUtEb_sv26ID4uMQqQ"
-      },
-      weap3: {
-        name: "Nova | Ranger",
-        price: 0.09,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpouLWzKjhjxszGfitD0863moeOhcj4OrzZglRd6dd2j6fEpomsjAew_0Q4Zm7zI4accAQ8YgnS_Fnrl-vm1MLuuZ6anHVluCcq-z-DyOIsbpmX"
-      },
-      weap4: {
-        name: "P90 | Elite Build",
-        price: 0.15,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopuP1FAR17OORIQJP7c-ikZKSqPv9NLPFqWdQ-sJ0xO-UrYrz3AztqEpuNT-iLNWTJwJtZVrY-1XskLrvhMW_uZ-dn3Iy6CY8pSGK7PES7n8"
-      },
-      weap5: {
-        name: "UMP-45 | Riot",
-        price: 0.08,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1Jf0Ob3ZDBSuImJgZCZmPbmDLfYkWNF18lwmO7Eu9yhi1Ds_0BuYzr3J4GVIFVrNVnUq1K3yee9hcO9uJyanyRlvXVx7XfD30vggrNaWnM"
-      },
-      weap6: {
-        name: "USP-S | Torque",
-        price: 0.24,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8jkIbTWhG5C-8xnteXI8oTht1i1uRQ5fWDyd9LAdQ4_MgzQqVm7wey918TuupufynUw6Sd05C2MyRfmgBgfbuBxxavJa8F12Qc"
-      }
     },
     restricted: {
       weap1: {
