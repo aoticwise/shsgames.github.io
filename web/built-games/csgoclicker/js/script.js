@@ -37,7 +37,6 @@ var operationCases = {
   case4: {name: "Operation Vanguard Case", price: 0.16, img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFIuh6rJImVGvtjllYaNka6la7rUxWkE65BzibvD9N7z0Q22-0Fka2GlJ5jVLFHqavWW2g"},
   case5: {name: "Chroma Case", price: 0.07, img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFEuh_KQJTtEuI63xIXbxqOtauyClTMEsJV1jruS89T3iQKx_BBqa2j3JpjVLFH1xpp0EQ"},
   case6: {name: "Falchion Case", price: 0.03, img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FF8ugPDMIWpAuIq1w4KIlaChZOyFwzgJuZNy3-2T89T0jlC2rhZla2vwIJjVLFHz75yKpg"}
-  case7: {name: "Zoraxis Industries", price: 1000.00, img: "https://static.wikia.nocookie.net/ieytd/images/2/26/Zoraxislogo.jpg/revision/latest?cb=20211213131408"}
 }
 
 var knives = {
@@ -523,15 +522,12 @@ var cases = {
         name: "Galil AR | Chatterbox",
         price: 3.69,
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbupIgthwczLZAJF7dC_mL-KleX1ILLemFRc7cF4n-T--Y3nj1H6_0Q6YWH0coTBdANoMlGG_gfrlLq9gcC6u8zMyXdh6HIk7XnYl0fliAYMMLLc6Xl8Aw"
-      }
-    }
-  },
-  case7: {
-    milspec: {
-      weap1: {
-        name: "Zoraxis Death Engine",
+      },
+            weap3: {
+        name: "Zoraxis Death Engine | Chatterbox",
         price: 1000000,
         img: "https://static.wikia.nocookie.net/ieytd/images/2/26/Zoraxislogo.jpg/revision/latest?cb=20211213131408"
+    }
       },
       weap2: {
         name: "MP9 | Deadly Poison",
